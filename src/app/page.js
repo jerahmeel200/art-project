@@ -11,7 +11,7 @@ function page() {
     <div>
       <Hero />
       <NewArivals />
-      <Products />
+      <MostPopular />
     </div>
   );
 }
