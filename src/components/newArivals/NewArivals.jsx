@@ -35,7 +35,7 @@ function NewArivals() {
           ))}
         </div>
         <div className={styles.displayContainer}>
-          <img src={sliderData[0].value} alt="large" width="500" />
+          <img src={sliderData[0].value} alt="large" width="350" />
         </div>
       </div>
       <div className={styles.right}>

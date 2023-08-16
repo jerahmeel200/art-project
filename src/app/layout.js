@@ -1,3 +1,5 @@
+"use client";
+
 import "./globals.css";
 // import "../styles/globals.css";
 // import { Inter } from "next/font/google";
@@ -15,7 +17,9 @@ export default function RootLayout({ children }) {
       <body>
         <>
           <Header />
-          {children}
+          <main className="flex min-h-screen flex-col mt-[80px]">
+            {children}
+          </main>
 
           <Footer />
         </>

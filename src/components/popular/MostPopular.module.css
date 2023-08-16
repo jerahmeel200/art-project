@@ -1,9 +1,16 @@
 .carousel {
   padding: 5rem;
+  border-top: 1px solid gray;
   /* background-color: gray; */
 }
-.box p {
-  padding-top: 10px;
+.star {
+  padding-top: 5px;
+}
+.price {
+  padding-top: 5px;
+}
+.desc {
+  padding-top: 5px;
 }
 .slick-slide div {
   margin: 0 1rem;
@@ -18,7 +25,11 @@
 .slick-prev:before,
 .slick-next:before {
   font-size: 24px !important;
+
   color: black !important;
+}
+button.slick-arrow.slick-next:before {
+  top: 70% !important;
 }
 
 /* Add hover effect to arrows */
@@ -28,4 +39,14 @@
 }
 .star {
   padding-left: 20px !important;
+}
+.box {
+  padding-top: 20px;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  align-items: center;
+  padding-bottom: 10px;
 }

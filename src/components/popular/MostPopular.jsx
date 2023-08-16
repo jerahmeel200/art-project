@@ -36,13 +36,13 @@ function MostPopular() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
     ],
   };
-  const products = [
+  const popular = [
     {
       id: 1,
       image: "/images/popImage1.webp",
@@ -82,24 +82,33 @@ function MostPopular() {
 
   return (
     <div className={styles.carousel}>
-      <h1>products</h1>
+      <div className={styles.heading}>
+        <h2 style={{ fontSize: "20px" }}>MOST POPULAR</h2>
+        <h1 style={{ fontSize: "30px" }}>Best Sellers</h1>
+      </div>
+
       <Slider {...settings}>
-        {products.map((item, index) => (
+        {popular.map((item, index) => (
           <div key={index} className={styles.box}>
             <img
               src={item.image}
               alt="product"
               style={{ height: 200, width: 500 }}
             />
-            <h4>{item.desc}</h4>
+            <h4 className={styles.desc}>{item.desc}</h4>
             <p>{item.description}</p>
-            <span style={{ left: 0, backgroundColor: "red" }}>
+            <span className={styles.star}>
               <StarRating rating={item.rating} className="my-10" />
             </span>
-            <span className={styles.c}>{item.price}</span>
+            <p className={styles.price}>{item.price}</p>
           </div>
         ))}
       </Slider>
+      <div className="flex justify-center items-center pt-10">
+        <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+          View all
+        </button>
+      </div>
     </div>
   );
 }

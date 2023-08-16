@@ -3,11 +3,14 @@
 .container {
   display: flex;
   width: 100%;
-  /* align-items: center; */
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   border-top: 1px solid lightgray;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   gap: 30px;
+
   /* flex-direction: column; */
 }
 
@@ -21,7 +24,6 @@
 .galleryContainer img {
   /* display: flex; */
   padding-bottom: 10px;
-  height: 20vh;
   /* margin-bottom: 20px; */
 }
 
@@ -34,7 +36,8 @@
   margin-bottom: 20px;
 }
 .displayContainer img {
-  height: 100vh;
+  height: 50vh;
+  background-repeat: repeat;
 }
 
 .right {
